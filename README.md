@@ -1,6 +1,6 @@
 # My Own Home — Personalized Furniture Recommendation Service
 
-[한국어 원문](README.ko.md) · [English project wiki](docs/wiki/Home.md) · [Demo](https://youtu.be/JuKz3PUd5xo) · [Presentation](https://www.youtube.com/watch?v=rJuBYWqGv-g)
+[한국어 원문](README.ko.md) · [English project wiki](https://github.com/tree-jhk/final-project-level3-recsys-12/wiki) · [Demo](https://youtu.be/JuKz3PUd5xo) · [Presentation](https://www.youtube.com/watch?v=rJuBYWqGv-g)
 
 <p align="center"><img src="https://user-images.githubusercontent.com/67851701/216806796-d05452c4-bdf4-4f8d-a126-ef3dad2cedcb.png" width="600"></p>
 
@@ -59,7 +59,7 @@ Docker deployment redesign, Jenkins security checks and parts of the automation 
 | [frontend](frontend/README.md) | Svelte interface |
 | [database](database/README.md) | Schema and management scripts |
 | [gcp](gcp/README.md) | Model-artifact transfer |
-| [English wiki](docs/wiki/Home.md) | Project decisions, troubleshooting and collaboration; figures unchanged |
+| [English wiki](https://github.com/tree-jhk/final-project-level3-recsys-12/wiki) | Project decisions, troubleshooting and collaboration; figures unchanged |
 
 Commands reflect the **2023 environment**. Private datasets, checkpoints and cloud/database credentials are not included; the retired service cannot be recreated with a single command.
 
@@ -77,5 +77,6 @@ Commands reflect the **2023 environment**. Private datasets, checkpoints and clo
 
 - [Presentation slides (Korean)](나만의집%20발표%20자료.pdf)
 - [Original wrap-up report](https://dear-queen-578.notion.site/Final-Project-Wrap-Up-Report-99d475442c304775804d41523113e385)
-- [English wiki](docs/wiki/Home.md)
+- [English wiki](https://github.com/tree-jhk/final-project-level3-recsys-12/wiki)
+- [Versioned wiki mirror](docs/wiki/Home.md)
 - [Original Korean wiki](https://github.com/boostcampaitech4lv23recsys2/final-project-level3-recsys-12/wiki)
