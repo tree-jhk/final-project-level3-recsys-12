@@ -1,25 +1,17 @@
+# Frontend — Svelte / Vite
 
----
+[Project](../README.md) · [한국어](README.ko.md) · [Interface walkthrough](../docs/wiki/UI-UX.md)
 
+The Korean interface supports image-based onboarding, product browsing, likes and refreshed recommendations. Interface strings and screenshots remain unchanged.
 
-## Get started
+## Historical setup
 
-1. node.js를 설치해주세요.
-  ```bash
-  conda install nodejs
-  ```
+Install Node.js; the team's environment used `conda install nodejs`. From the repository root:
 
-2. frontend 폴더로 이동합니다.
-  ```bash
-  cd frontend
-  ```
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-3. dependencies 설치해줍니다.
-  ```bash
-  npm install
-  ```
-
-4. 서버를 시작합니다.
-  ```bash
-  npm run dev
-  ```
+`package.json` defines scripts/dependencies; `vite.config.js` defines development configuration. Backend data/model settings must be available for the complete service.

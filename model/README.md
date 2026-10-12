@@ -1,21 +1,28 @@
-# 딥러닝 모델 환경 정리
+# Recommendation model
 
-## 요약
-0. 반드시 backend/data/train.tsv로 저장합니다.
-1. 모델 개발자 제외한 사람들:  
-    - gcp 폴더 이동
-    - ``` python main.py ``` 실행
-2. 모델 개발자:
-    - model/AE_model 폴더 이동
-    - ``` python train.py ``` 실행
-    - 모델 학습 후
-    - gcp 폴더 이동
-    - ``` python main.py --mode 0``` 실행
+[Project](../README.md) · [한국어](README.ko.md) · [Model decisions and evaluation](../docs/wiki/Model.md)
 
-## 자세한 과정
+The served recommender is **Multi-DAE**, a denoising autoencoder mapping a preferred-item vector to catalog scores. This folder also contains Multi-VAE; its presence does not mean it was deployed.
 
-0. 최신 반영 데이터가 backend/data/train.tsv로 저장됩니다.
-1. model/AE_model/train.py을 실행해서 학습 진행  
-    이때, 매 epoch마다 최대 RECALL@K가 나오면, model/saved_model/best_model.pt에  저장됩니다.
-2. 모델을 학습시킬 사람이 gcp/main.py를 실행해서 학습된 모델을 GCP 상으로 전송합니다.
-3. GCP 상의 모델 == 업데이트된 모델을 업데이트하려면 gcp/main.py을 실행해서 모델을 업데이트하면 됩니다.
+## Files
+
+- `AE_model/Multi_DAE.py`: Multi-DAE architecture.
+- `AE_model/Multi_VAE.py`: variational-autoencoder alternative.
+- `AE_model/dataloader.py`: interaction loading.
+- `AE_model/train.py`: training and checkpoint selection.
+- `AE_model/inference.py`: inference.
+- `AE_model/args.py`, `utils.py`: configuration and utilities.
+
+## Historical workflow
+
+1. Place updated interactions at `backend/data/train.tsv`.
+2. From `model/AE_model/`, run `python train.py`.
+3. The best recall checkpoint is saved to `model/saved_model/best_model.pt`.
+4. From `gcp/`, run `python main.py --mode 0` to upload it.
+5. Other developers run `python main.py` from `gcp/` to download it for serving.
+
+Data and checkpoints are not bundled. See [GCP setup](../gcp/README.md) for private configuration.
+
+## Evaluation lesson
+
+NDCG@10 and Recall@10 plateaued while service recommendations remained similar across users. Catalog coverage exposed this failure. Longer training improved coverage and subsequently accuracy: an evaluation/training intervention, **not a new diversity loss**.
