@@ -4,6 +4,8 @@ Original team schedule, retained as an image. Dates and Korean labels are unchan
 
 ![image](https://user-images.githubusercontent.com/90206705/217472393-0eea094c-e12f-41a6-9c89-6b86c99a6c42.png)
 
+**Schedule translation:** Weekday columns run Sunday through Saturday. The January–February 2023 workstreams are data crawling; database setup; front/back-end prototypes; model prototype; EDA and preprocessing pipeline; initial deployment setup; model improvement; item clustering; front/back-end improvement; deployment improvement; Docker image build; data processing; GCP Storage setup; detecting people in interior images; image vectorization; A/B testing; and documentation. Bars indicate planned/recorded work periods, not independent proof that every task was completed.
+
 
 ---
 

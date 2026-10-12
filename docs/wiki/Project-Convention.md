@@ -14,6 +14,8 @@ The project grouped work into five broad areas and used milestones to track prog
 
 <img src="https://user-images.githubusercontent.com/67851701/217255952-f8f44e75-a353-4c91-856b-663d2e99b983.png" width="1000">
 
+**Milestone descriptions:** Serving = deployment with GCP/Docker; Front-end = Svelte interface; Data = crawling, EDA and database work; Back-end = FastAPI implementation; Model = models used by the project. The progress bars and closed/open counts are the status at the time of the screenshot.
+
 ## Issues
 
 Issues track ideas, feedback, tasks and bugs, and provide a place to discuss problems together.
@@ -21,6 +23,8 @@ Issues track ideas, feedback, tasks and bugs, and provide a place to discuss pro
 ### How the team filed an issue
 
 <img src="https://user-images.githubusercontent.com/67851701/217257456-a82dad59-5974-49ad-85ef-3ba58d37108a.png" width="1000">
+
+**Highlighted instructions:** Fill in the issue template; assign yourself; select appropriate labels, project board and milestone. These fields connect a task to its owner and project area.
 
 1. Create an issue when a problem appears.
 2. Follow the issue template.
@@ -34,6 +38,8 @@ Issues track ideas, feedback, tasks and bugs, and provide a place to discuss pro
 
 <img src="https://user-images.githubusercontent.com/67851701/217258082-588de431-9cd7-4338-9021-f2255787ecc8.png" width="1000">
 
+**Example issue translation:** After liking an item and requesting new recommendations, unrelated new products incorrectly appear liked. Reproduction: refresh recommendations → like a recommended item → refresh again. The note diagnoses a component initialized only on the first page load and proposes re-rendering it when data changes, using a keyed block.
+
 ## Pull requests
 
 The template makes proposed changes consistent and readable. PRs let teammates review/discuss changes and add follow-up commits before integration.
@@ -41,6 +47,8 @@ The template makes proposed changes consistent and readable. PRs let teammates r
 ### Team procedure
 
 <img src="https://user-images.githubusercontent.com/67851701/217260192-7b69f347-958d-46d9-a247-52181eb8c2a8.JPG" width="1000">
+
+**Highlighted instructions:** Fill in the PR title, date, change description and cautions; request review from a same-domain teammate and the PM; assign yourself; select relevant labels, project board and milestone.
 
 1. Open a PR when work is ready for integration.
 2. Follow the template.

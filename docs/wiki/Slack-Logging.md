@@ -14,9 +14,13 @@ The team added Slack-bot support and a helper function to send selected Python l
 
 <img src = "https://user-images.githubusercontent.com/90206705/217552728-52ba6777-722c-49ce-854e-f7dba90dcda5.png" weight=600px height=200px>
 
+**Code-comment translation:** 'Slack connection'. The example reads Slack configuration from `secrets.yaml`, then posts a message to the `#serverlog` channel through `chat.postMessage`; the configuration values are not shown in the image.
+
 3. Call `post_slack_message` where a notification is useful; the text argument becomes the Slack message.
 
 <img src = "https://user-images.githubusercontent.com/90206705/217552771-dba0191b-df79-4b1f-b7ca-dd5149804624.png" weight=600px height=200px>
+
+**Slack UI translation:** 'App' identifies ServerLog-bot as an application; the Korean time labels mean 4:32 PM and 5:28 PM. The visible test messages demonstrate successful posting, not a record of production monitoring.
 
 This was useful during development and service monitoring. Never expose a token or rely on automatic revocation as protection. Treat event logs as potentially sensitive and limit what is sent to shared channels.
 

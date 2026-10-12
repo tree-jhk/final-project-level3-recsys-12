@@ -29,6 +29,8 @@ Describe the function in `Summary`, input types/purposes in `Args`, and outputs 
 
 <img src="https://user-images.githubusercontent.com/67851701/217251191-6ec9e5e7-bfe5-43e2-b44b-4b5547776aeb.png" width="400">
 
+**Screenshot translation:** The function checks whether a user has liked an item. `member_email` is the user's email address and `item_id` is the item identifier; it returns `False` when no matching preference record exists and `True` otherwise.
+
 [Original reference](https://ui.toast.com/fe-guide/ko_CODING-CONVENTION)
 
 

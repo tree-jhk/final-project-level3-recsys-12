@@ -2,7 +2,7 @@
 
 [Project README](../../README.md) · [Complete navigation](Navigation.md)
 
-English edition of **Team RAYN's 2023 project documentation**. All original figures are retained, including Korean screenshots. Pages describe the historical project, not an active service. Source-page links preserve attribution; original team documentation remains unchanged.
+English edition of **Team RAYN's 2023 project documentation**. All original figures are retained, including Korean screenshots; English captions explain Korean labels and essential figure details where needed. Pages describe the historical project, not an active service. Source-page links preserve attribution; original team documentation remains unchanged.
 
 ## Project
 

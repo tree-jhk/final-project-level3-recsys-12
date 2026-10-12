@@ -6,6 +6,8 @@ Help users discover interior products suited to their preferences, rather than r
 
 ![image](https://user-images.githubusercontent.com/80964004/217549790-f6617c67-df31-4b29-85d3-482005cf106d.png)
 
+**Figure translation:** Furniture shopping involves long-term use, high prices, many choices and popularity-heavy results. The proposed service uses interior-style preferences for personalized product recommendations. The right column lists intended benefits—less browsing time, better shopping quality and discovery of new tastes—not independently measured outcomes.
+
 
 ---
 

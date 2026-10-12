@@ -22,11 +22,15 @@ To accommodate remote teammates working from different places, the database had 
 
 <img src="https://user-images.githubusercontent.com/67851701/217992803-681f6288-ea2c-41d5-b15b-97ae36968300.png" width="400">
 
+**Warning translation:** Adding `0.0.0.0/0` permits every IPv4 client—including unintended clients—to pass the network firewall and attempt an instance login, although valid credentials are still required. The form shows a network named 'ALL'; it documents the insecure historical configuration, not a recommended setup.
+
 ### Weak password
 
 The team had reused a trivial local-development password for a remotely accessible database.
 
 <img src="https://user-images.githubusercontent.com/67851701/217993196-4df2f6b1-bba0-4a03-bb79-e09706d39543.png" width="">
+
+**Form labels:** 'Instance information', 'Instance ID', 'Password', and 'Set the root user's password.' The screenshot illustrates the weak historical password choice described above; it is not a current credential or a recommended configuration.
 
 ## Response
 
@@ -38,7 +42,7 @@ The early login flow accepted email input, creating another potential attack sur
 
 <img src="https://user-images.githubusercontent.com/67851701/217995409-2e11877f-071b-4154-8646-90dfccf340dd.png" width="800">
 
-It also bound external inputs as query parameters where raw SQL was used:
+The original note also discussed protecting raw SQL queries. The retained screenshot, however, shows Python string interpolation before execution, not safe parameter binding:
 
 <img src="https://user-images.githubusercontent.com/67851701/217996270-30555823-bda8-4980-857d-1584d2a3b5c8.png" width="800">
 

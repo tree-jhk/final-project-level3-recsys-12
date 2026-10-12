@@ -8,13 +8,19 @@ Ohouse users publish posts introducing their homes.
 
 <img width="400" src="https://user-images.githubusercontent.com/97151660/217498091-97174c96-3d29-43a6-b86a-8f4d8bd21d9a.png">
 
+**On-screen labels:** The highlighted 'Home tours' tab lists posts in which users introduce their interiors. Titles, bookmark counts and view counts describe each post; they are not product-preference labels by themselves.
+
 Each post collects the products used in that interior.
 
 <img width="400" src="https://user-images.githubusercontent.com/97151660/217499421-860b32b9-f7b3-417a-bd04-b56757ad3676.png">
 
+**On-screen labels:** 'Products used in this home' and 'View room.' The listed products connect the interior post to product records, providing the associations used to construct training interactions.
+
 The team formed author–product interactions from these associations, assuming the products reflect the author's preferences. They are implicit signals rather than independently verified purchases.
 
 <img width="400" src="https://user-images.githubusercontent.com/97151660/217506734-6d0bcb4b-1fee-4797-8e51-534b1acd78d9.png">
+
+**Figure translation:** 'Items used by an Ohouse user in their interior.' A home-tour author and the attached product list form the user–item interactions used for recommendation training.
 
 ## Inference data
 
@@ -28,11 +34,15 @@ Products associated with their selected interiors form an initial preference vec
 
 <img width="400" src="https://user-images.githubusercontent.com/97151660/217509763-f65489d5-6762-41ab-a543-b7c67f530d4e.png">
 
+**Figure translation:** 'Constructing a My Own Home user's initial preference data.' Products associated with the blue-bordered selected interiors populate the new user's preference vector.
+
 ### Refinement through likes
 
 Liking a product adds it to the preference vector, allowing refreshed recommendations to incorporate further preference signals.
 
 <img width="400" src="https://user-images.githubusercontent.com/97151660/217511710-440c04d7-5997-4519-b322-dfb98f5507e7.png">
+
+**Figure translation:** 'Re-recommend using the products liked by the My Own Home user. Incorporating likes enables more refined recommendations.' Blue-bordered products represent the initial preferences; red hearts mark additional liked products.
 
 ## Initial approach: LightGCN
 
@@ -79,9 +89,13 @@ Coverage continued increasing with training, motivating additional epochs. Event
 
 <img width="500" src="https://user-images.githubusercontent.com/67851701/229434322-e3b77c66-52fa-49aa-921e-477177d51162.JPG">
 
+**Chart translation:** 'NDCG@10 increases!' and 'Diversity@10 increases!' The horizontal axis is training epochs. The dark/light blue curves show NDCG@10 and Recall@10; the orange curve shows **10 × Diversity@10** for visibility, not raw diversity on the same scale. Later training improves accuracy as coverage rises.
+
 The updated model produced visibly more diverse recommendations in the service.
 
 <img width="400" src="https://user-images.githubusercontent.com/80964004/217544635-83a6b462-beaf-4970-857b-738fe80c1a54.png">
+
+**Figure translation:** 'Users' tastes' → 'Recommendation results.' User A prefers modern, tidy interiors; User B prefers a home-like Scandinavian style; User C prefers a large family home and ornate interiors. The rows illustrate differing recommendation sets, rather than reporting a quantitative evaluation.
 
 The lesson: validate whether recommendations actually reflect different preferences instead of accepting an offline metric plateau as proof of successful personalization. The separate web A/B test compared satisfaction with recommendation diversity against a popularity-based recommender; ambiguous survey denominators are not reinterpreted here as a validated accuracy or business-impact statistic.
 

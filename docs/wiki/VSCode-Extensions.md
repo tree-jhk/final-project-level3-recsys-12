@@ -4,6 +4,8 @@
 
 <img src = "https://user-images.githubusercontent.com/90206705/217501724-191a51a3-9263-4992-9109-f65893150671.png" width="40%" height="20%">
 
+**Korean UI labels:** 'Disable', 'Uninstall', and 'This extension is enabled globally.' The important feature is colored indentation; the Korean text only describes the extension's installation state.
+
 Color-code indentation to distinguish nesting at a glance.
 
 <img src = "https://user-images.githubusercontent.com/90206705/217501796-adffeae5-035e-42e2-8a27-4ac0080ec0c5.png" width="40%" height="20%">
@@ -13,6 +15,8 @@ Useful for functions, loops, conditionals and exception blocks.
 ## 2. Rainbow CSV
 
 <img src = "https://user-images.githubusercontent.com/90206705/217501870-66b76e1b-3c37-4bc1-bc47-23556645edf5.png" width="40%" height="20%">
+
+**Korean UI labels:** 'Disable', 'Uninstall', and 'This extension is enabled globally.' Rainbow CSV's functionality is described in English above the buttons.
 
 Different colors for CSV/TSV columns improve readability.
 
@@ -30,17 +34,23 @@ The toolbar and hover information expose commit context; navigation makes file h
 
 <img src = "https://user-images.githubusercontent.com/90206705/217502035-4d2acfd6-31ae-472a-8d81-acbbc0816fe0.png" width="40%" height="20%">
 
+**Korean UI labels:** 'Uninstall' and 'Switch to Pre-Release'. The note says the extension is enabled on the remote host and disabled locally; it describes installation scope, not a notebook result.
+
 Work with notebooks inside VS Code.
 
 ## 5. autoDocstring
 
 <img src = "https://user-images.githubusercontent.com/90206705/217502067-7c200e27-6ab1-4aa6-a948-90401db410f6.png" width="40%" height="20%">
 
+**Korean UI labels:** 'Uninstall' and 'Learn more'. The note describes enabling the extension on the remote host rather than locally; the English headline identifies it as a Python docstring generator.
+
 Generate Python docstring templates.
 
 ## 6. Git Graph
 
 <img src = "https://user-images.githubusercontent.com/90206705/217502110-37dcd03d-39de-4549-8aac-5de69a2581b7.png" width="40%" height="20%">
+
+**Korean UI labels:** 'Disable', 'Uninstall', and 'Enabled on SSH: aistage'. The extension visualizes Git history; the Korean text only identifies the remote installation context.
 
 Visualize branch/commit history for easier branch management.
 

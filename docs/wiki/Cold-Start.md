@@ -8,14 +8,20 @@ The recommender takes an item-preference vector. How can it recommend furniture 
 
 <img width="700" alt="스크린샷 2023-02-07 오후 4 04 38" src="https://user-images.githubusercontent.com/111856748/217171937-e0f681e4-670d-4d9c-8452-11f9c7d47a23.png">
 
+**Figure labels:** The 11 styles are Modern; Industrial; Korean & Asian; French & Provence; Minimal & Simple; Lovely & Romantic; Natural; Scandinavian; Unique & Mix-and-match; Vintage & Retro; and Classic & Antique. Five random photographs per style produce the initial 55-image pool.
+
 2. Sample five photographs from each of 11 styles: **55 photographs**.
 3. Ask the user to choose at least five photographs they like.
 
 <img width="700" alt="회원가입-기존" src="https://user-images.githubusercontent.com/111856748/217170404-5d5e067e-527c-42bc-8903-4206e563bf00.png">
 
+**On-screen instructions:** 'Select images you like. The more you select, the more personalized the results will be.' This is the original fixed image-selection screen.
+
 4. Use associated products from preference-relevant categories, such as sofas and shelves, as initial liked items.
 
 <img width="700" alt="스크린샷 2023-02-07 오후 4 09 03" src="https://user-images.githubusercontent.com/111856748/217172761-0c947e14-1dc0-4653-bbd7-95d437c82fec.png">
+
+**Figure explanation:** Selecting an interior photograph provides its associated products as candidate initial preferences. Crossed-out products illustrate filtering out categories that are less useful for inferring furniture taste; not every product in the selected room becomes a preference signal.
 
 If none of the sampled images matches the user's taste, selection can become frustrating and users may leave.
 
@@ -24,6 +30,8 @@ If none of the sampled images matches the user's taste, selection can become fru
 Style labels were imbalanced.
 
 <img width="600" alt="스타일별개수" src="https://user-images.githubusercontent.com/111856748/217194439-c2ec0f80-d784-410f-8830-8e7ead9a0642.png">
+
+**Chart labels, left to right:** Unique & Mix-and-match; Minimal & Simple; Industrial; Vintage & Retro; Classic & Antique; Korean & Asian; Modern; French & Provence; Natural; Scandinavian; Lovely & Romantic. The vertical axis counts images: Natural and Modern dominate, illustrating the imbalance behind equal-per-style sampling.
 
 They were also subjective: an interior labeled “natural” might look “modern” to another person. Some photographs drew attention to people rather than the interior.
 
@@ -34,6 +42,8 @@ They were also subjective: an interior labeled “natural” might look “moder
 The team reframed the task: filter distracting images and organize remaining images by their visual content instead of relying only on style labels.
 
 <img width="1000" alt="image" src="https://user-images.githubusercontent.com/111856748/217493363-128ebc70-647f-411f-876f-6e7f1be3f477.png">
+
+**Slide translation:** The original style-based random sampling did not reliably show interior-focused images, provide trustworthy style labels, match user taste, or infer taste from other features. The final question, 'Are the images noisy?', is marked yes; the photographs on the right show distracting people. The slide's sampling-count wording differs from the 55-image procedure documented above; its purpose here is to illustrate these failure modes.
 
 ## Method
 
@@ -64,6 +74,8 @@ Initially show images from a broad range. After selections, compute their center
 Early choices remained varied; subsequent choices increasingly reflected a similar interior mood.
 
 <img width="900" alt="모델적용결과" src="https://user-images.githubusercontent.com/111856748/217203386-793e4613-5eb3-47a3-afa3-801a369b835b.png">
+
+**Figure translation:** 'Can you see my taste?' The left screen shows a broad, sometimes distracting image pool; the right shows interior-focused choices after the selection method was improved. This is a qualitative interface comparison, not a measured satisfaction result.
 
 ## Discussion
 
